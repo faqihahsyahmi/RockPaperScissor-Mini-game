@@ -35,13 +35,27 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+
+trophy = '''
+             ___________
+            '._==_==_=_.'
+            .-\:      /-.
+           | (|:.     |) |
+            '-|:.     |-'
+              \::.    /
+               '::. .'
+                 ) (
+               _.' '._
+              `"""""""`
+'''
+
 # save the above ascii art in a list
 game_image = [rock, paper, scissors]
 
 # user choice convert to int
-user_choice = int(input("What is your choice? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
+user_choice = int(input("What is your choice? Type:\n0 for Rock\n1 for Paper\n2 for Scissors\n"))
 #print(f"User choose:\n {game_image[user_choice]}")
-print("User choose:")
+print("\nYou choose:")
 print(game_image[user_choice])
 
 # computer choose randomly - 0:rock, 1:paper, 2:scissors
@@ -53,13 +67,17 @@ print(game_image[comp_choice])
 if user_choice >= 3 or user_choice < 0:
     print("You choose an invalid number! Hence, you lose!")
 elif user_choice == 0 and comp_choice == 2:
-  print("You Win!")
+    print("You Win!")
+    print(trophy)
 elif comp_choice == 0 and user_choice == 2:
     print("You Lose!")
 elif comp_choice > user_choice:
     print("You Lose!")
 elif user_choice > comp_choice:
     print("You Win!")
+    print(trophy)
 elif comp_choice == user_choice:
     print("It is a draw")
+
+print("Thank you for playing the mini game. Click 'run' to play again!")
 

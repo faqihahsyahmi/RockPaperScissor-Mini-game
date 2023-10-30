@@ -15,3 +15,6 @@ Basic Game Rules:
 
 Visit this link to try running the program directly:
 * Replit Workspace: https://replit.com/@faqihahsyahmi00/RockPaperScissors/
+
+## Acknowledgments
+* Inspired by - 100 Days of Code: The Complete Python Pro Bootcamp for 2023
